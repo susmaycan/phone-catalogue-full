@@ -1,0 +1,24 @@
+version: "3"
+services:
+    frontend:
+        container_name: phone-catalogue-client
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        image: asdyrocks/phone-catalogue-client
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./client:/usr/src/app
+            - /usr/src/app/node_modules
+    backend:
+        container_name: phone-catalogue-server
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        image: asdyrocks/phone-catalogue-server
+        ports:
+            - "3001:3001"
+        volumes:
+            - ./server:/usr/src/app
+            - /usr/src/app/node_modules

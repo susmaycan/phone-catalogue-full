@@ -1,0 +1,15 @@
+@import "../../styles/base";
+
+.phone-image--container {
+  text-align: center;
+
+  .phone-image {
+    @media screen and (max-width: $device-max-width) {
+      height: 200px;
+    }
+    @media screen and (min-width: $pc-min-width) {
+      height: 300px;
+    }
+    object-fit: contain;
+  }
+}

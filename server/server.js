@@ -1,0 +1,20 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+var cors = require('cors');
+
+// create express app
+const app = express();
+app.use(bodyParser.urlencoded({ extended: true }))
+
+// parse application/json
+app.use(bodyParser.json())
+app.use(cors())
+
+require('./app/routes/phone.routes.js')(app);
+
+const PORT = process.env.PORT || 3001;
+
+// listen for requests
+app.listen(PORT, () => {
+    console.log("Server is listening on port 3001");
+});
