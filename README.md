@@ -2,7 +2,9 @@ Phone catalogue application
 
 ## Run with docker
 1. In the terminal you type: 
-### `docker-compose up`
+### `docker-compose up --build`
+
+**Note: You need docker and npm to be installed**
 
 2. Open in the browser:
 [http://localhost:3000/](http://localhost:3000/)
