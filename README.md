@@ -3,6 +3,7 @@
 ## Information
 1. The API is build with NodeJS and it doesn't use a database, it only retrieves the .json.
 2. The Front-end is built with NodeJS and Redux. It uses additional libraries as Axios, React Router, Saas and Bootstrap.
+3. The "discount" and "reviews" components are random numbers generated. Their use is only to make the web prettier.
 
 ## Run with docker
 1. Clone the project on your computer. 
