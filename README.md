@@ -7,10 +7,14 @@
 
 ## Run with docker
 1. Clone the project on your computer. 
-### `git clone https://github.com/susmaycan/phone-catalogue-full.git`
+```sh
+git clone https://github.com/susmaycan/phone-catalogue-full.git
+```
 2. On the root folder on the project, open a terminal and type: 
-### `cd phone-catalogue-full`
-### `docker-compose up --build`
+```sh 
+cd phone-catalogue-full
+docker-compose up --build
+```
 
 **Note: You need docker, docker-compose and npm to be installed**
 
