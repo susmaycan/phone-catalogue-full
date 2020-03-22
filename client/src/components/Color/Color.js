@@ -6,7 +6,7 @@ import {
 } from 'react-bootstrap'
 
 const Color = ({ color }) => (
-    <div className="color--container">
+    <div className="container-color">
         <Row className="justify-content-center">
             <p className="m-1">Avariable in: </p>
             <div className="square m-1" style={{ backgroundColor: color }}></div>

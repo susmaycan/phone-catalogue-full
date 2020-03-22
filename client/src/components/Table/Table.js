@@ -7,7 +7,7 @@ import {
 
 const SpecTable = ({ title, elements }) => (
     <>
-        <h3 className="specs">{title}</h3>
+        <h3>{title}</h3>
         <Table responsive>
             <tbody>
                 {elements.map(element => {

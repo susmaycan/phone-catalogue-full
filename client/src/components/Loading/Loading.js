@@ -1,5 +1,4 @@
 import React from 'react'
-import './Loading.scss'
 import {
     Spinner
 } from "react-bootstrap"
@@ -7,7 +6,7 @@ import {
 class Loading extends React.Component {
     render() {
         return (
-           <div className="body-container">
+           <div className="block container-message">
                   <Spinner animation="grow" variant="dark" /><span> Loading...</span>
            </div>
         );

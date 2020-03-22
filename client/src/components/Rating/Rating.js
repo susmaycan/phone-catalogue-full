@@ -19,7 +19,7 @@ class Rating extends React.Component {
     }
     render() {
         return (
-            <div className="rating--container">
+            <div className="container-rating">
                {this.renderRating()}
             </div>
         );

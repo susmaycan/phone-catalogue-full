@@ -1,17 +1,17 @@
 @import "../../styles/base";
 
-.navigation-bar{
-    color: $color-white;
-    font-size: 1.5em;
+.navigation-bar {
+  font-size: 1.5em;
+  color: $color-white;
 }
 
 .brand-link {
   text-decoration: none;
   color: inherit;
-}
 
-.brand-link:hover{
+  &:hover {
     font-weight: bold;
     text-decoration: none;
     color: inherit;
+  }
 }

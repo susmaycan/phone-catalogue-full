@@ -4,13 +4,13 @@ import {
     Alert
 } from "react-bootstrap"
 
-class Loading extends React.Component {
+class Message extends React.Component {
     render() {
         return (
-           <div className="body-container">
-                <Alert variant="danger">Sorry there was an error processing your request.</Alert>
-           </div>
+            <div className="block container-message">
+                <Alert variant="danger">{this.props.children}</Alert>
+            </div>
         );
     }
 }
-export default Loading
+export default Message

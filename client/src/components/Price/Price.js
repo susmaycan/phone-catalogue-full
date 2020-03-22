@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Discount from '../Discount'
 
 const Price = ({ value }) => (
-    <div className="price--container">
+    <div className="container-price">
         <p>From <span className="price">{value}.99 €</span><Discount /></p>
     </div>
 )

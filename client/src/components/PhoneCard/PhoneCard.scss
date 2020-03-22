@@ -11,14 +11,12 @@
   .card-container--title {
     text-align: center;
   }
+  .selected {
+    border: 2px $color-primary solid;
+  }
+  
+  &:hover {
+    border: 2px $color-primary solid;
+    cursor: pointer;
+  }
 }
-
-.card-container:hover {
-  border: 2px $color-secondary solid;
-  cursor: pointer;
-}
-
-.selected {
-  border: 2px $color-secondary solid;
-}
-

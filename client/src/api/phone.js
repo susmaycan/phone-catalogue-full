@@ -1,7 +1,6 @@
 import axios from 'axios'
 
 const endpoint_local = 'http://localhost:3001/phones';
-const endpoint_web = 'https://phone-catalogue-api.herokuapp.com/phones';
 
 const api = {
     phones: {

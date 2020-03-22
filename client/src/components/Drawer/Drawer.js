@@ -7,15 +7,15 @@ import Price from '../Price'
 import Table from '../Table'
 import Color from '../Color'
 import Image from '../Image'
+import BackArrow from '../BackArrow'
+
 
 const Drawer = ({ phone, show, toggleDrawer }) => (
     <MaterialDrawer anchor='right' open={show} onClose={toggleDrawer(false)}>
-        <div className="drawer-container">
-            <div className="back-arrow-container">
-                <span onClick={toggleDrawer(false)} className="back-arrow">
-                    <i className="fas fa-arrow-left"></i>
-                </span>
-            </div>
+        <div className="container-drawer">
+            <BackArrow 
+                toggleDrawer={toggleDrawer}
+            />
             <h2 className="text-center phone-title">{phone.name}</h2>
             <Rating />
             <hr width='50%' />

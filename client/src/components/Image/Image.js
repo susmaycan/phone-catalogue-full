@@ -6,12 +6,12 @@ import {
 } from 'react-bootstrap'
 
 const PhoneImage = ({ imageFileName }) => (
-    <div className="phone-image--container">
+    <div className="container-image">
         <Image className="phone-image" fluid src={`./images/${imageFileName}`} />
     </div>
 );
 
 PhoneImage.propTypes = {
-    fileName: PropTypes.string.isRequired
+    imageFileName: PropTypes.string.isRequired
 }
 export default PhoneImage

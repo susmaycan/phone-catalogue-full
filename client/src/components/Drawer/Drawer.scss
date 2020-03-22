@@ -1,6 +1,6 @@
 @import "../../styles/base";
 
-.drawer-container {
+.container-drawer {
   @media screen and (max-width: $device-max-width) {
     width: 320px;
   }
@@ -11,19 +11,5 @@
 
   .phone-title {
     font-weight: 400;
-  }
-}
-
-
-
-.back-arrow-container {
-  align-items: left;
-
-  .back-arrow {
-    cursor: pointer;
-  }
-
-  .back-arrow:hover {
-    size: 2em;
   }
 }
