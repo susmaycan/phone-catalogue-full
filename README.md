@@ -2,7 +2,7 @@
 
 ## Information
 1. The API is build with NodeJS and it doesn't use a database, it only retrieves the .json.
-2. The Front-end is built with NodeJS and Redux. Uses additional libraries as Axios, React Router, Saas,Bootstrap...
+2. The Front-end is built with NodeJS and Redux. It uses additional libraries as Axios, React Router, Saas and Bootstrap.
 
 ## Run with docker
 1. Clone the project on your computer. 
