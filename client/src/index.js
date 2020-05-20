@@ -3,9 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux'
 import { render } from 'react-dom'
 import configureStore from './utils/configureStore'
-import Layout from './containers/Layout'
-import Navbar from './components/Navbar'
-import Error from './components/Error'
+import components from './components'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './styles/index.scss'
 
@@ -14,10 +12,10 @@ const store = configureStore()
 render(
     <Provider store={store}>
         <BrowserRouter>
-            <Route path="/" component={Navbar} />
+            <Route path="/" component={components.NavigationBar} />
             <Switch>
-                <Route exact path="/" component={Layout} />
-                <Route component={Error} />
+                <Route exact path="/" component={components.PhoneList} />
+                <Route component={components.Error} />
             </Switch>
         </BrowserRouter>
     </Provider>,
