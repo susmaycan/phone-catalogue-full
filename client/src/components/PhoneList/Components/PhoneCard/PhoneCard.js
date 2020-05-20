@@ -12,14 +12,15 @@ function PhoneCard(props) {
 
     const toggleDrawer = (actionOpen) => event => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            return;
+            return
         }
 
-        setShow(actionOpen);
-    };
+        setShow(actionOpen)
+    }
+
     return (
-        <div>
-            <div onClick={toggleDrawer(true)} className={`card-container ${show ? "selected" : "arroz con cosas"}`}>
+        <React.Fragment>
+            <div onClick={toggleDrawer(true)} className={`card-container ${show ? "selected" : ""}`}>
                 <Image imageFileName={phone.imageFileName}/>
                 <h2 className="text-center">{phone.name}</h2>
                 <p>{phone.manufacturer}</p>
@@ -31,7 +32,7 @@ function PhoneCard(props) {
                 show={show}
                 toggleDrawer={toggleDrawer}
             />
-        </div>
+        </React.Fragment>
     )
 }
 

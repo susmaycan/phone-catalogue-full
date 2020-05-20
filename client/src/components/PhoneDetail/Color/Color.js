@@ -12,7 +12,7 @@ const Color = ({ color }) => (
             <div className="square m-1" style={{ backgroundColor: color }}></div>
         </Row>
     </div>
-);
+)
 
 Color.propTypes = {
     color: PropTypes.string.isRequired

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import List from '../List'
 import {Loading, Message} from '../../../Common'
 import './PhoneList.scss'
@@ -25,27 +25,37 @@ class PhoneList extends Component {
     }
 
     renderBody() {
-        if (this.props.isLoading) {
-            return (
-                <Loading />
-            )
-        } else if (this.props.error) {
-            return (
-                <Message>Sorry, there was a problem and we <strong>couldn't retrieve</strong> the phone list. Please, try again later.</Message>
-            )
-        } else {
-            if (this.state.phoneList.length === 0) {
-                return (
-                    <Message>Sorry, we <strong>couldn't find</strong> phones that matches your query. Please, try again using different words.</Message>
-                )
-            } else {
-                return (
-                    <List phones={this.state.phoneList} />
-                )
-            }
 
+        const {isLoading, error} = this.props
+        const {phoneList} = this.state
+
+        if (isLoading) {
+            return (
+                <Loading/>
+            )
         }
+
+        if (error) {
+            return (
+                <Message>Sorry, there was a problem and we <strong>couldn't retrieve</strong> the phone list. Please,
+                    try again later.</Message>
+            )
+        }
+
+        if (phoneList.length === 0) {
+            return (
+                <Message>Sorry, we <strong>couldn't find</strong> phones that matches your query. Please, try again
+                    using different words.</Message>
+            )
+        }
+
+        return (
+            <List phones={phoneList}/>
+        )
+
+
     }
+
     render() {
         return (
             <div className="block app-body">

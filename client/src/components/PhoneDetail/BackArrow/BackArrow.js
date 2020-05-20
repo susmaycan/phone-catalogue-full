@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const BackArrow = ({ toggleDrawer }) => (
     <div className="container-back-arrow">
         <span onClick={toggleDrawer(false)} className="back-arrow">
-            <i className="fas fa-arrow-left"></i>
+            <i className="fas fa-arrow-left"/>
         </span>
     </div>
 );
