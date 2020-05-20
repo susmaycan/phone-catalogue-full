@@ -1,23 +1,25 @@
-import {
-    FETCH_SUCCESS,
-    FETCH_REQUEST,
-    FETCH_ERROR,
-    SET_FILTER
-} from '../actions'
+import ActionTypes from '../actions/actionTypes'
 
-const reducer = (state = {}, action) => {
+const INITIAL_STATE = {
+    isLoading: false,
+    error: false,
+    phones: [],
+    searchTerm: ''
+}
+
+const reducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case FETCH_REQUEST:
-            return {...state, isLoading: true, phones: [], searchTerm: ''};
-        case FETCH_SUCCESS:
-            return {...state, isLoading: false, phones: action.payload, searchTerm: ''};
-        case FETCH_ERROR:
-            return {...state, isLoading: false, error:true};
-        case SET_FILTER:
-            return {...state, searchTerm: action.text};
+        case ActionTypes.FETCH_REQUEST:
+            return {...state, isLoading: true}
+        case ActionTypes.FETCH_SUCCESS:
+            return {...state, isLoading: false, phones: action.payload}
+        case ActionTypes.FETCH_ERROR:
+            return {...state, isLoading: false, error:true}
+        case ActionTypes.SET_FILTER:
+            return {...state, searchTerm: action.text}
         default:
-            return state;
+            return state
     }
-};
+}
 
-export default reducer;
+export default reducer
