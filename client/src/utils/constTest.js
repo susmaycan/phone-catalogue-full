@@ -14,3 +14,7 @@ export const PHONE_LIST = {
         "ram": 2
     }]
 }
+
+export const IMAGE_FILENAME = "IPhone_7.png"
+export const MESSAGE = "Message test"
+export const PRICE = 769
