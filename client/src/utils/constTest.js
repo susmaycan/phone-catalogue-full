@@ -1,4 +1,5 @@
 export const SEARCH_TEXT = "Xiaomi"
+export const INITIAL_PHONE_LIST = {phones:[]}
 export const PHONE_LIST = {
     phones: [{
         "id": 0,

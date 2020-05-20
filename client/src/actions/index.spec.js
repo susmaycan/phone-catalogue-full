@@ -2,13 +2,13 @@ import * as actions from './index'
 import actionTypes from './actionTypes'
 import configureMockStore from 'redux-mock-store'
 import thunkMiddleware from 'redux-thunk'
-import axios from "axios"
-import MockAdapter from "axios-mock-adapter";
-import {PHONE_LIST, SEARCH_TEXT} from "../utils/constTest";
+import axios from 'axios'
+import MockAdapter from 'axios-mock-adapter'
+import {PHONE_LIST, SEARCH_TEXT, INITIAL_PHONE_LIST} from '../utils/constTest'
 
 const middlewares = [thunkMiddleware]
 const mockStore = configureMockStore(middlewares)
-const store = mockStore({phones: []})
+const store = mockStore(INITIAL_PHONE_LIST)
 
 let mockAxios = new MockAdapter(axios)
 
