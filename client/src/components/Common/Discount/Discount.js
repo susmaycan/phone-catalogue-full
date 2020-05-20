@@ -4,7 +4,7 @@ import './Discount.scss'
 class Discount extends React.Component {
 
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             value: Math.floor((Math.random() * 80) + 1)
         }
@@ -12,7 +12,7 @@ class Discount extends React.Component {
     render() {
         return (
             <span className="discount">- {this.state.value} %</span>
-        );
+        )
     }
 }
 export default Discount

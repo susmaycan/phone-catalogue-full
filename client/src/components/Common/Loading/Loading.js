@@ -9,7 +9,7 @@ class Loading extends React.Component {
            <div className="block container-message">
                   <Spinner animation="grow" variant="dark" /><span> Loading...</span>
            </div>
-        );
+        )
     }
 }
 export default Loading

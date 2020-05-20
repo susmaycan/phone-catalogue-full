@@ -12,17 +12,18 @@ class Rating extends React.Component {
 
     renderRating() {
         let ratings = []
-        for (let i = 0; i < this.state.rating; i++) {
-            ratings.push(<i key={i} className="fas fa-star"></i>);
+        for (let i = 1; i < this.state.rating; i++) {
+            ratings.push(<i key={i} className="fas fa-star"/>)
         }
-        return ratings;
+        return ratings
     }
+
     render() {
         return (
             <div className="container-rating">
                {this.renderRating()}
             </div>
-        );
+        )
     }
 }
 export default Rating
