@@ -1,5 +1,5 @@
 import reducer from './phoneReducer'
-import {PHONE_LIST, SEARCH_TEXT} from '../Utils/constTest'
+import {PHONE_LIST, SEARCH_TEXT} from '../utils/constTest'
 import actionTypes from '../actions/actionTypes'
 
 const INITIAL_STATE = {
