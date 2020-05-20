@@ -41,7 +41,9 @@ Drawer.propTypes = {
         screen: PropTypes.string.isRequired,
         processor: PropTypes.string.isRequired,
         ram: PropTypes.number.isRequired,
-    }).isRequired
+    }).isRequired,
+    show: PropTypes.bool.isRequired,
+    toggleDrawer: PropTypes.func.isRequired
 }
 
 export default Drawer
