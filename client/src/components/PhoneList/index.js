@@ -1,3 +1,3 @@
-import PhoneList from './PhoneList'
+import Layout from './Container/PhoneListContainer'
 
-export default PhoneList
+export default Layout

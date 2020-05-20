@@ -1,0 +1,8 @@
+client/build
+client/node_modules
+server/node_modules
+
+.idea
+
+client/yarn.lock
+client/package-lock.json

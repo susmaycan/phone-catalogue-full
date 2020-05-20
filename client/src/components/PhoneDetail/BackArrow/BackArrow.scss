@@ -1,0 +1,13 @@
+@import "../../../styles/base";
+
+.container-back-arrow {
+  align-items: end;
+
+  .back-arrow {
+    cursor: pointer;
+
+    &:hover {
+      size: 2em;
+    }
+  }
+}

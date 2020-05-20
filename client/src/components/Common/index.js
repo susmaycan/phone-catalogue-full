@@ -1,0 +1,6 @@
+export {default as Image} from './Image'
+export {default as Loading} from './Loading'
+export {default as Message} from './Message'
+export {default as Discount} from './Discount'
+export {default as Price} from './Price'
+export {default as Rating} from './Rating'
