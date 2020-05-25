@@ -22,3 +22,14 @@ services:
         volumes:
             - ./server:/usr/src/app
             - /usr/src/app/node_modules
+    test:
+        container_name: phone-catalogue-frontend-test
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        volumes:
+            - ./client:/usr/src/app
+            - /usr/src/app/node_modules
+        environment:
+            - CI=true
+        command: npm run test
