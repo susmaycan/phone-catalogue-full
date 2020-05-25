@@ -6,11 +6,11 @@
 3. The "discount" and "reviews" components are random numbers generated. Their use is only to make the web prettier.
 
 ## Run with docker
-1. Clone the project on your computer. 
+1 - Clone the project on your computer. 
 ```sh
 git clone https://github.com/susmaycan/phone-catalogue-full.git
 ```
-2. On the root folder on the project, open a terminal and type: 
+2 - On the root folder on the project, open a terminal and type: 
 ```sh 
 cd phone-catalogue-full
 docker-compose up --build
@@ -18,10 +18,10 @@ docker-compose up --build
 
 **Note: You need docker, docker-compose and npm to be installed**
 
-2. Open in the browser:
+3 - Open in the browser:
 [http://localhost:3000/](http://localhost:3000/)
 
 ## Repositories:
-Both projects have been developed in different repositories, so here you can find both the back-end and front-end repositories (in case you want to check out the commits) and the url, where they are deployed:
-1. Front-end deployed in [Netlify](https://phone-catalogue.netlify.com/), the code of the deployed web is in this [repository](https://github.com/susmaycan/phone-catalogue)
-2. Back-end deployed in [Heroku](https://phone-catalogue-api.herokuapp.com/), the code of the deployed api is in this [repository](https://github.com/susmaycan/phone-catalogue-api)
+Both projects have been developed in different repositories, so here you can find both the back-end and front-end urls where they are deployed:
+1. Front-end deployed in [Netlify](https://phone-catalogue.netlify.com/)
+2. Back-end deployed in [Heroku](https://phone-catalogue-api.herokuapp.com/)
