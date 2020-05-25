@@ -9,7 +9,6 @@ const api = {
                 const response = await axios.get(endpoint_local)
                 return Promise.resolve(response)
             } catch (error) {
-                console.log("Error retrieving the data from API")
                 return Promise.reject(error)
             }
         }
