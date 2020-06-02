@@ -21,7 +21,7 @@ docker-compose up --build
 3 - Open in the browser:
 [http://localhost:3000/](http://localhost:3000/)
 
-## Repositories:
+## URLS:
 Both projects have been developed in different repositories, so here you can find both the back-end and front-end urls where they are deployed:
 1. Front-end deployed in [Netlify](https://phone-catalogue.netlify.com/)
 2. Back-end deployed in [Heroku](https://phone-catalogue-api.herokuapp.com/)
